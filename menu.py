@@ -75,3 +75,11 @@ class menu:
         #    tmp=self.nowlist[self.menuoffset+self.hightlightnum][1].lstrip('@')
         #    self.initText() 
         eval(self.nowlist[self.menuoffset+self.hightlightnum][1])
+    def clickSpecial(self):
+        '''
+        User function.
+        run the selected element command.
+        it can be use like a "long press"
+        '''
+        if self.nowlist[self.menuoffset+self.hightlightnum][2] is True:
+            eval(self.nowlist[self.menuoffset+self.hightlightnum][2])
