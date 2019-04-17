@@ -66,3 +66,12 @@ class menu:
             self.initText(self.nowlist,self.menuoffset+1,self.hightlightnum) #refresh the Text List
         else:
             self.moveHighLight(self.hightlightnum-1)
+    def click(self):
+        '''
+        User function.
+        run the selected element command.
+        '''
+        #if self.nowlist[self.menuoffset+self.hightlightnum][1][0]=='@': #this point to another menu
+        #    tmp=self.nowlist[self.menuoffset+self.hightlightnum][1].lstrip('@')
+        #    self.initText() 
+        eval(self.nowlist[self.menuoffset+self.hightlightnum][1])
