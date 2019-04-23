@@ -2,7 +2,7 @@
 
 ![view](Doc/profilephoto.png)
 ![view2](Doc/profilephoto2.png)
-##usage
+## usage
 
 ** simple example is update. You can see it in the repo
 

@@ -49,9 +49,9 @@ class menu:
         User function.
         Make menu downside one element
         '''
+        if(self.menuoffset+self.hightlightnum == len(self.nowlist)-1): ## equal to max value
+            return
         if (self.hightlightnum+2)*10>self.menuh: #Text is out of range
-            if(self.menuoffset+self.hightlightnum == len(self.nowlist)-1): ## equal to max value
-                return
             self.initText(self.nowlist,self.menuoffset+1,self.hightlightnum) #refresh the Text List
         else:
             self.moveHighLight(self.hightlightnum+1)
@@ -60,9 +60,9 @@ class menu:
         User function.
         Make menu upside one element
         '''
+        if(self.menuoffset+self.hightlightnum == 0): ## equal to min value
+            return
         if self.hightlightnum==0: #Text is out of range
-            if(self.menuoffset+self.hightlightnum == 0): ## equal to min value
-                return
             self.initText(self.nowlist,self.menuoffset+1,self.hightlightnum) #refresh the Text List
         else:
             self.moveHighLight(self.hightlightnum-1)
