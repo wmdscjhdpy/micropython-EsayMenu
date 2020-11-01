@@ -63,7 +63,7 @@ class menu:
         if(self.menuoffset+self.hightlightnum == 0): ## equal to min value
             return
         if self.hightlightnum==0: #Text is out of range
-            self.initText(self.nowlist,self.menuoffset+1,self.hightlightnum) #refresh the Text List
+            self.initText(self.nowlist,self.menuoffset-1,self.hightlightnum) #refresh the Text List
         else:
             self.moveHighLight(self.hightlightnum-1)
     def click(self):
